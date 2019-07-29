@@ -1,0 +1,67 @@
+header
+{
+	width:100%;
+	background-color: black;
+	height:100px;
+	
+}
+
+header nav
+{
+	padding-top:20px;
+}
+
+header nav ul li
+{
+	display:inline;
+	
+	margin-right: 1%;
+	list-style: none;
+	color: white;
+	font-size: large;
+	font-weight: bold;	
+}
+header nav ul li a
+{
+	color:white;
+	text-decoration: none;
+}
+
+header nav ul li a:HOVER {
+	
+	text-decoration: underline;
+}
+
+header menu
+{
+	 margin-left: 70%;
+	 margin-top: -2%; 
+}
+header menu ul li
+{
+	display:inline;	
+	margin-right: 1%;
+	list-style: none;
+	color: white;
+	font-size: large;
+	font-weight: bold;	
+}
+
+header menu ul li img
+{
+	width:25px;
+	
+}
+
+header menu ul li a
+{
+	color:white;
+	text-decoration: none;
+}
+
+header menu ul li a:HOVER {
+	
+	text-decoration: underline;
+}
+
+
