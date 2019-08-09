@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+          http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
+    version="2.1">
+     
+    <persistence-unit name="InsuranceDB">
+        <properties>
+        <property name="hibernate.dialect" 
+                  value="org.hibernate.dialect.DerbyTenSevenDialect"/>
+                  <property name="javax.persistence.schema-generation.database.action" value="update"/>
+      <property name="javax.persistence.schema-generation.scripts.action" value="update"/>
+      <property name="javax.persistence.schema-generation.scripts.create-target" value="sampleCreate.ddl"/>
+      <property name="javax.persistence.schema-generation.scripts.drop-target" value="sampleDrop.ddl"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:derby:F:/hsbc_july_2019/backup/08082019/insurancedb;create=true;upgrade=true" />
+            <property name="javax.persistence.jdbc.user" value="admin" />
+            <property name="javax.persistence.jdbc.password" value="admin" />
+            <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.EmbeddedDriver" />
+            <property name="hibernate.show_sql" value="true" />
+            <property name="hibernate.format_sql" value="true" />
+            <property name="hbm2ddl.auto" value="update"/>
+        </properties>
+    </persistence-unit>
+     
+</persistence>
